@@ -1,0 +1,8 @@
+<component name="CopyrightManager">
+  <settings>
+    <LanguageOptions name="Kotlin">
+      <option name="lenBefore" value="120" />
+      <option name="lenAfter" value="120" />
+    </LanguageOptions>
+  </settings>
+</component>

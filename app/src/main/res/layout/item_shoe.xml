@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="4dp"
+        android:padding="8dp"
+        android:background="@drawable/shoe_item_border">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="@{shoe.name}"
+            android:textColor="#AD1457"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="JOLT 3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="@{shoe.company}"
+            android:textSize="18sp"
+            tools:text="ASICS" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text='@{@string/size_format(shoe.size).replaceAll("\\.?0+", "")}'
+            tools:text="Size: 12.5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{shoe.description}"
+            android:textSize="12sp"
+            tools:text="The new JOLT™ 3 shoe is designed to help you run or walk more comfortably. This shoe combines an injection EVA midsole with a solid rubber outsole for improved durability. Drawing inspiration from our longstanding GT series, this trainer offers classic styling and a great fit. To make this edition even softer and move with your foot better on the run, we have engineered more flex grooves in the outsole. The upper is reinforced with stitch down overlays. Lastly, a more accommodating forefoot fit and a soft OrthoLite™ sockliner will help keep you stay comfortable throughout the day. " />
+
+    </LinearLayout>
+</layout>
